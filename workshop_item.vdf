@@ -1,0 +1,11 @@
+"workshopitem"
+{
+	"appid"		"1295660"
+	"publishedfileid"	"0"
+	"contentfolder"		"REPLACE_WITH_ABSOLUTE_PATH/settler-lens-turn-1"
+	"previewfile"		"REPLACE_WITH_ABSOLUTE_PATH/settler-lens-turn-1/preview.png"
+	"visibility"		"2"
+	"title"			"Auto Settler Lens on Turn 1"
+	"description"		"Automatically switches to the Settler lens at the start of turn 1, so you can see settlement recommendations the moment the game begins. UI-only; does not affect saved games."
+	"changenote"		"Initial release"
+}
