@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="nm-settler-lens-turn-1" version="1" xmlns="ModInfo">
+    <Properties>
+        <Name>Auto Settler Lens on Turn 1</Name>
+        <Description>Automatically activates the Settler lens at the start of the first turn.</Description>
+        <Authors>neil</Authors>
+        <Package>Mod</Package>
+        <!-- UI-only, no gameplay/database changes, so it does not affect saved games. -->
+        <AffectsSavedGames>0</AffectsSavedGames>
+    </Properties>
+    <Dependencies>
+        <Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME" />
+    </Dependencies>
+    <ActionCriteria>
+        <Criteria id="always">
+            <AlwaysMet></AlwaysMet>
+        </Criteria>
+    </ActionCriteria>
+    <ActionGroups>
+        <!-- scope="game" so the script only loads once you are actually in a game. -->
+        <ActionGroup id="game-settler-lens-turn-1" scope="game" criteria="always">
+            <Actions>
+                <UIScripts>
+                    <Item>ui/settler-lens-turn-1.js</Item>
+                </UIScripts>
+            </Actions>
+        </ActionGroup>
+    </ActionGroups>
+</Mod>
